@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-background {
+    height: 250px;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto 0px;
+}
+
+.user-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.user-image:hover {
+    filter: drop-shadow(2px 4px 30px rgba(0, 0, 0, 0.25));
+}
+
+.user-details {
+    margin-top: 140px;
+}
+
+.user-name {
+    text-align: center;
+    font-size: 25px;
+    color: #1F1F1F;
+}
+
+.user-follow {
+    font-size: 15px;
+    color: #97999B;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.user-follow a {
+    text-decoration: none;
+    color: #97999B;
+    transform: all 0.3s ease;
+}
+
+.user-follow a:hover {
+    text-decoration: underline
+}
+
+.all-btn {
+    width: fit-content;
+    margin: 30px auto 0px;
+}
+
+.all-btn button {
+    height: 40px;
+    width: fit-content;
+    padding: 0px 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.all-btn button i {
+    padding-right: 10px;
+}
+
+.all-btn .follow-btn {
+    background-color: #E4E6EB;
+    color: #1F1F1F;
+    margin-right: 10px;
+}
+
+.all-btn .follow-btn:hover {
+    background-color: #D7D8DB;
+}
+
+.all-btn .learn-more-btn {
+    background-color: #1B74E4;
+    color: white;
+    margin-left: 10px;
+}
+
+.all-btn .learn-more-btn:hover {
+    background-color: #1764C6;
+}
+
+@media (max-width: 480px) {
+    .user-background {
+        height: 150px;
+        width: 95%;
+        margin: 10px auto 0px;
+    }
+
+    .user-image {
+        height: 150px;
+        width: 150px;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .user-details {
+        margin-top: 105px;
+    }
+
+    .user-name {
+        font-size: 20px;
+    }
+
+    .user-follow {
+        font-size: 13px;
+    }
+
+    .all-btn {
+        display: block;
+        width: auto;
+    }
+
+    .all-btn button {
+        width: 90%;
+        display: block;
+        margin: auto !important;
+    }
+
+    .all-btn button:last-child {
+        margin-top: 15px !important;
+    }
+}
